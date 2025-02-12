@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f5f2;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: white;
+    border-bottom: 2px solid #e0d6cf;
+}
+
+.logout {
+    background-color: #e0d6cf;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.filter-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    flex-wrap: wrap; /* 横に並ばないように折り返しを追加 */
+}
+
+.filter-container input, .filter-container select, .filter-container button {
+    padding: 8px;
+    border: 1px solid #c5b9ad;
+    border-radius: 5px;
+    margin-bottom: 10px; /* 各要素の間隔を広げる */
+}
+
+.filter-container input[type="text"] {
+    flex-grow: 1; /* 名前またはメールアドレス入力欄を広げる */
+    min-width: 250px; /* 最小幅を指定 */
+}
+
+.filter-container button {
+    cursor: pointer;
+}
+
+.search {
+    background-color: #8c7665;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+}
+
+.reset {
+    background-color: #c5b9ad;
+    border: none;
+    padding: 8px 16px;
+}
+
+.export {
+    background-color: #e0d6cf;
+    border: none;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+table {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #c5b9ad;
+}
+
+th {
+    background-color: #8c7665;
+    color: white;
+}
+
+td {
+    background-color: white;
+}
+
+.detail {
+    background-color: #f8f5f2;
+    border: 1px solid #c5b9ad;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.pagination {
+    margin-top: 15px;
+}
+
+.pagination button {
+    background-color: white;
+    border: 1px solid #c5b9ad;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.pagination .active {
+    background-color: #8c7665;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .filter-container {
+        flex-direction: column; /* 小さい画面で縦に並べる */
+        align-items: stretch; /* 要素を左寄せにする */
+    }
+
+    .filter-container input, .filter-container select, .filter-container button {
+        width: 100%; /* 各フォーム要素を全幅に */
+        margin-bottom: 8px; /* 間隔を広げる */
+    }
+}

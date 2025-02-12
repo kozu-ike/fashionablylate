@@ -1,0 +1,75 @@
+/* 全体のスタイル */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f5f2;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* ヘッダー */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: white;
+    border-bottom: 2px solid #e0d6cf;
+}
+
+/* メインコンテンツ */
+main {
+    padding: 20px;
+}
+
+/* 見出し */
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* 詳細情報セクション */
+.detail-info {
+    padding: 15px;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid #c5b9ad;
+}
+
+.detail-info p {
+    margin: 10px 0;
+}
+
+.detail-info h3 {
+    margin-top: 0;
+}
+
+/* 削除ボタン */
+.btn-danger {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn-danger:hover {
+    background-color: darkred;
+}
+
+/* モーダルウィンドウを閉じる×ボタン */
+.close-btn {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
